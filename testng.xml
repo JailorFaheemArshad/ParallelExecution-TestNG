@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests">
+  <test thread-count="5" name="TestOnChrome">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.testng.parallel.Parallel_Exeuction"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="TestOnMsedge">
+  <parameter name="browser" value="msedge"></parameter>
+    <classes>
+      <class name="com.testng.parallel.Parallel_Exeuction"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="TestOnFirefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.testng.parallel.Parallel_Exeuction"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
